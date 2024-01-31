@@ -1,3 +1,9 @@
+# WWW-interaktiivisuus - Loppuharjoitus
+
+## Tehtävänanto
+
+Tehtävänantona oli jatkaa loppuun tuntiharjoituksena yhdessä aloitettu hyvin pieni tekstiseikkailupeli.
+
 ## Muutokset
 
 - Ulkoasu muutettu retroksi pikselöidyksi tekstiseikkailupeliksi.
@@ -50,5 +56,9 @@ ja ilmaisella huilu VSTi:llä.
 Kiven ääniklippi: Youtube-videosta: 'Stone dropped in water sound effect no copyright stone sounds HQ (128 kbps)'. Käsitely Reaperissa kaiulla
 vastaamaan paremmin pudotusta kapeaan kaivoon.      
 Ranskalainen ritari: Kuva- ja äänikaappaus elokuvasta Monty Python and the Holy Grail.      
-Antiochin Pyhän Käsikranaatin ääniklippi: Äänikaappaus elokuvasta Monty Python and the Holy Grail.      
+Antiochin Pyhän Käsikranaatin ääniklippi: Äänikaappaus elokuvasta Monty Python and the Holy Grail.
+
+## Opettajan kommentti kurssista
+
+Täydelliset suoritukset, hyvä. Pelissä oli paljon piirteitä ja toimintoja joita muut eivät ole käyttäneet, hyvä.
 
