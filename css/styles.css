@@ -1,0 +1,423 @@
+:root{
+    --main-txt-color: #FCF7F8;
+    --blue: #0A369D;
+    --orange: #E3B23C;
+    --green: #7AE582;
+    --main-bg-color: #335145;
+}
+*{
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--main-bg-color);
+}
+
+.readme{
+    display: block;
+    position: absolute;
+    top: 925px;
+}
+
+.container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(../images/background.jpg);
+    background-size: static;
+    border: 1px solid var(--main-bg-color); 
+    /* box-shadow: 2px 2px 5px #999; */
+    padding: 0px;
+    width: 1200px;
+    height: 900px;
+    box-sizing: border-box;
+
+    position: relative;
+    
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.startbutton{
+    font-size: 30px;
+    margin: auto;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 50px;
+    top: 750px;
+    left: 550px;
+    /* border: 5px ridge var(--main-txt-color); */
+    color: var(--main-bg-color);
+}
+
+.intro{
+    box-sizing: border-box;
+    position: absolute;
+    top: 200px;
+    width: 1000px;
+    margin: 0 100px;
+}
+
+.intro p{
+    font-size: 30px;
+    color: var(--main-txt-color);
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 20px 20px;
+}
+
+.grid{
+    /* background-image: url(../images/grid.jpg); */
+    background-size: cover;
+    background-color: var(--main-bg-color);
+    height: 340px;
+    width: 340px;
+    position: absolute;
+    top: 515px;
+    left: 660px;
+    border: 5px outset var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini0{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/torni.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+    image-rendering: pixelated;
+}
+
+.mini1{
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/kaivo.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini2{
+    position: absolute;
+    top: 0px;
+    left: 220px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/aukio.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini3{
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/dragon.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini4{
+    position: absolute;
+    top: 110px;
+    left: 110px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/polku.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini5{
+    position: absolute;
+    top: 110px;
+    left: 220px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/portti.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini6{
+    position: absolute;
+    top: 220px;
+    left: 0px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/joki.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini7{
+    position: absolute;
+    top: 220px;
+    left: 110px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/penkki.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini8{
+    position: absolute;
+    top: 220px;
+    left: 220px;
+    height: 110px;
+    width: 110px;
+    background-image: url(../images/mokki.jpg);
+    background-size: cover;
+    opacity: 0;
+    border: 5px ridge var(--main-bg-color);
+    box-sizing: border-box;
+}
+
+.mini9{
+    position: absolute;
+    top: 330px;
+    left: 330px;
+    height: 0px;
+    width: 0px;
+    background-image: url(../images/bottomofwell.jpg);
+    background-size: cover;
+    opacity: 0;
+    /* border: 1px solid white; */
+}
+
+.container-inner{
+    width: auto;
+    margin: 0px 100px;
+    /* text-align: center; */
+    display: none;
+    position: relative;
+    animation: opac 2s;
+    /* top: 50px; */
+}
+
+.input{
+    display: inline;
+    /* margin: 10px auto; */
+    color: var(--main-bg-color);
+    /* background-color: rgba(0, 0, 0, 1);     */
+    background-color: var(--main-txt-color);
+    position: absolute;
+    left: 0px;
+    top: 855px;
+    width: 900px;
+    height: 43px;
+    outline: none;
+    /* border: 5px ridge white; */
+    box-sizing: border-box;
+    font-size: 30px;
+
+
+}
+
+.input:focus{
+    outline: none;
+   
+}
+
+.button{
+    display: block;
+    margin: 0px auto;
+    box-sizing: border-box;
+    height: 43px;
+    width: 100px;
+    position: absolute;
+    top: 855px;
+    left: 900px;
+    border: 5px ridge var(--main-txt-color);
+    color: var(--main-bg-color);
+}
+
+/* p{
+    color: black;
+    font-family: 'VT323', monospace;
+} */
+
+#kuva{
+    display: inline;
+    width: 500px;
+    height: 445px;
+    border: 5px outset var(--main-bg-color);
+    /* margin: 40px auto; */
+    background-image: url(../images/polku.jpg);
+    background-size: cover;
+    position: absolute;
+    left: 500px;
+    top: 70px;
+    box-sizing: border-box;
+}
+
+@keyframes opac {
+    0% {
+      opacity: 0;
+    }
+    
+    100% {
+      opacity: 1;
+    }
+  }
+
+/* img{
+    display: block;
+    width: 300px;
+    height: 267px;
+    border: 1px solid white;
+    margin: 40px auto;
+} */
+
+
+
+.lokaatio{
+    /* background-color: rgba(0, 0, 0, 1); */
+    background-color: var(--main-txt-color);
+    /* border: 5px ridge white; */
+    /* margin: 2px; */
+    height: 70px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 1000px;
+    height: 70px;
+    box-sizing: border-box;
+    color: var(--main-bg-color);
+    padding-left: 5px;
+}
+
+.sijaintiheading{
+    /* font-family: 'Eagle Lake', cursive;
+    font-weight: bold; */
+    font-size: 30px;
+    color: var(--main-bg-color);
+    height: 35px;
+    /* width: 300px; */
+    /* border: 1px solid white; */
+    margin: 0 auto;
+}
+
+.sijainti{
+    height: 40px;
+    /* width: 300px; */
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    color: var(--main-bg-color);
+}
+
+/* .viesti{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 5px ridge white;
+} */
+
+.output{
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: var(--main-bg-color);
+    border: 5px outset var(--main-bg-color);
+    color: var(--main-txt-color);
+    height: 445px;
+    width: 500px;
+    /* border: 1px solid white; */
+    margin: 0 auto;
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    top: 70px;
+    box-sizing: border-box;
+
+}
+
+.maassa{
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: var(--main-bg-color);
+    border: 5px outset var(--main-bg-color);
+    /* margin: 10px auto 10px auto; */
+    display: inline;
+    position: absolute;
+    left: 0px;
+    top: 515px;
+    width: 330px;
+    height: 340px;
+    box-sizing: border-box;
+
+
+}
+
+.itemsongroundheading{
+    /* font-family: 'Eagle Lake', cursive;
+    font-weight: bold; */
+    font-size: 30px;
+    color: var(--main-txt-color);
+    height: 35px;
+    /* width: 300px; */
+    margin: 0 auto;
+}
+
+.itemsonground{
+    color: var(--main-txt-color);
+    /* height: 40px;
+    width: 490px; */
+    margin: 0 auto;
+}
+
+.repussa{
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: var(--main-bg-color);
+    border: 5px outset var(--main-bg-color);
+    position: absolute;
+    left: 330px;
+    top: 515px;
+    box-sizing: border-box;
+    width: 330px;
+    height: 340px;
+
+}
+
+.inventoryheading{
+    /* font-family: 'Eagle Lake', cursive;
+    font-weight: bold; */
+    font-size: 30px;
+    color: var(--main-txt-color);
+    height: 35px;
+    /* width: 500px; */
+    margin: 0 auto;
+}
+
+.inventory{
+    color: var(--main-txt-color);
+    height: 40px;
+    /* width: 490px; */
+    margin: 0 auto;
+}

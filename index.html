@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Seikkailupeli</title>
+</head>
+
+<body>
+    <audio id="mokkiaudio" src="audio/seikkailupeli_mokki_brightsideoflife_mono.mp3"></audio>
+    <audio id="intro" src="audio/seikkailupeli_intro1.mp3"></audio>
+    <audio src="audio/seikkailupeli_flute1.mp3" id="flute1"></audio>
+    <audio src="audio/seikkailupeli_flute2.mp3" id="flute2"></audio>
+    <audio src="audio/kivi.mp3" id="kivi"></audio>
+    <audio src="audio/grenade.mp3" id="grenade"></audio>
+    <audio src="audio/french.mp3" id="french"></audio>
+
+    <div class="container">
+
+        <button id="startbutton" class="startbutton" onclick="document.getElementById('startbutton').style.display = 'none',
+            document.getElementById('container-inner').style.display = 'block',
+            document.getElementById('intro').style.display = 'none',
+            document.getElementById('introteksti').style.display = 'none',
+            document.getElementById('input').value = ''">Aloita</button>
+        <div id="intro" class="intro">
+            <p id="introteksti" class="introteksti">Tervetuloa seikkailija! Olet jo selvittänyt tiesi kaupungin laitamille. Tarkoituksesi on päästä vielä idässä sijaitsevan kaupungin portista sisään. 
+                <br> <br>Pelialueelta löytyviä esineitä voit ottaa mukaasi komennolla: "poimi 'esineen nimi'".<br>Mukanasi olevia esineitä voit käyttää komennolla: 
+                "käytä 'esineen nimi'".<br>Lisäksi voit pudottaa mukanasi olevia esineitä komennolla: "pudota 'esineen nimi'".<br><br>Komennot voit syöttää joko
+                klikkaamalla syöttökentän viereistä painiketta tai painamalla 'enter'.<br><br>Liikkua voit joko komennoilla 'pohjoinen', 'itä', 'etelä' ja 'länsi' tai
+                käyttämällä näppäimistön nuolinäppäimiä.
+
+            </p>
+        </div>
+        <div class="container-inner" id="container-inner">
+            <div id="kuva" class="kuva"></div>
+            <input type="text" id="input" class="input" placeholder="Anna komento">
+            <!-- id käytetään javascriptissä ja class css:ssä (nykysuositus)-->
+            <button id="button" class="button">Submit</button>
+            <div id="grid" class="grid">
+                <div id="mini0" class="mini0"></div>
+                <div id="mini1" class="mini1"></div>
+                <div id="mini2" class="mini2"></div>
+                <div id="mini3" class="mini3"></div>
+                <div id="mini4" class="mini4"></div>
+                <div id="mini5" class="mini5"></div>
+                <div id="mini6" class="mini6"></div>
+                <div id="mini7" class="mini7"></div>
+                <div id="mini8" class="mini8"></div>
+                <div id="mini9" class="mini9"></div>
+            </div>
+            <div class="viesti">
+                <p id="output" class="output"></p>
+            </div>
+            <div class="lokaatio">
+                <p id="sijaintiheading" class="sijaintiheading">Sijaintisi:</p>
+                <p id="sijainti" class="sijainti"></p>
+            </div>
+
+            <div class="maassa">
+                <p id="itemsongroundheading" class="itemsongroundheading"></p>
+                <p id="itemsonground" class="itemsonground"></p>
+            </div>
+            <div class="repussa">
+                <p id="inventoryheading" class="inventoryheading">Repussasi on:</p>
+                <p id="inventory" class="inventory"></p>
+            </div>
+        </div>
+    </div>
+    <a class="readme" href="readme.html" target="_blank">Readme</a>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
